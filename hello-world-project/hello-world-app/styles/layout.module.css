@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Work+Sans:ital,wght@0,500;1,500&display=swap');
+
+:global(html) {
+  height: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+:global(body) {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+:global(.leftTabsContentGallery-js-module),
+.layout {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+:global(.title) {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+:global(.subtitle) {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}

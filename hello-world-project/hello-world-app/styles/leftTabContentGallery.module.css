@@ -1,0 +1,70 @@
+:root {
+  --primary-color: #012C6D;
+  --secondary-color: #EDEFF2;
+  --tertiary-color: #F5F5F5;
+  --quaternary-color: #F8F8F8;
+  --quinary-color: #F9F9F9;
+  --senary-color: #FAFAFA;
+  --septenary-color: #FBFBFB;
+  --octonary-color: #FCFCFC;
+  --nonary-color: #FDFDFD;
+  --denary-color: #FEFEFE;
+}
+
+.title {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-top: 4rem;
+  width: 800px;
+  gap: 3rem
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: white;
+  width: 40%;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin: 0 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+  width: 100%;
+  cursor: pointer;
+  border-bottom: 1px solid #EDEFF2;
+  padding: 1.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.menuItem::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  color: lightgray;
+}
+
+.menuItem.selected {
+  background-color: #EDEFF2;
+}
+
+.menuItem.selected::before {
+  color: green;
+}

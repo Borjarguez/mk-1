@@ -1,0 +1,15 @@
+defaultPortal: cuenta-de-prueba-de-desarrollador-1
+portals:
+  - name: cuenta-de-prueba-de-desarrollador-1
+    portalId: 145589641
+    env: prod
+    authType: personalaccesskey
+    auth:
+      tokenInfo:
+        accessToken: >-
+          CLnu-I2pMhIRAA0AQAAA4G0DQAJYAgEAAPgYiYu2RSCb9LAiKO7pDDIU266RGwb_n7akEGBOxdNHa7qxbWw6TAAABEEAAAB4AAAAAAAAAAAAgAAAAAAABAAAwAcAjvAxPGBQBgBEAGBA_BgGABAgAwAAAAAAPP4DAAAAAAAAAAwEAAAAAAAAAAAAABBCFLTeaW22NtR_3hDNOCScGDdfYSACSgNldTFSAFoAYAA
+        expiresAt: '2024-10-15T19:53:35.338Z'
+    accountType: DEVELOPER_TEST
+    personalAccessKey: >-
+      CiRldTEtYzcxOC1lOGNmLTRlNWEtYTlhZC0xYzM2MjUzNGVlNjYQiYu2RRib9LAiKhkABeaRgta_Pliq_UH5YSprWQBzHYb4TtTDSgNldTE
+    parentAccountId: 145587897
