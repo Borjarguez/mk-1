@@ -1,30 +1,9 @@
-:root {
-  --primary-color: #012C6D;
-  --secondary-color: #EDEFF2;
-  --tertiary-color: #F5F5F5;
-  --quaternary-color: #F8F8F8;
-  --quinary-color: #F9F9F9;
-  --senary-color: #FAFAFA;
-  --septenary-color: #FBFBFB;
-  --octonary-color: #FCFCFC;
-  --nonary-color: #FDFDFD;
-  --denary-color: #FEFEFE;
-}
-
-.title {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 26px;
-  font-weight: 500;
-  color: var(--primary-color);
-}
-
 .container {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  align-items: center;
-  margin-top: 4rem;
-  width: 800px;
+  align-items: flex-start;
+  width: 1280px;
   gap: 3rem
 }
 
@@ -39,6 +18,10 @@
 }
 
 .menuItem {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,17 +37,82 @@
   transition: background-color 0.3s, border-color 0.3s;
 }
 
-.menuItem::before {
-  content: '>';
-  position: absolute;
-  left: 0;
-  color: lightgray;
-}
-
 .menuItem.selected {
   background-color: #EDEFF2;
 }
 
-.menuItem.selected::before {
-  color: green;
+.menuItem .item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.itemArrow {
+  fill: var(--quinary-color) !important;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  height: 100%;
+  background-color: white;
+  width: 60%;
+}
+
+.labelText {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  background-color: var(--tertiary-color);
+  width: fit-content;
+  padding: 0 5px;
+  margin: 0;
+}
+
+.contentTitle {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--secondary-color);
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  border: var(--quaternary-color);
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.arrowButton {
+  padding: 10px 15px;
+  background-color: var(--quaternary-color);
+  color: white;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid var(--quaternary-color);
+  background-color: white;
+  cursor: pointer;
+
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: var(--quaternary-color);
+}
+
+.icon_left {
+  transform: scaleX(-1);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  background-color: grey;
 }
