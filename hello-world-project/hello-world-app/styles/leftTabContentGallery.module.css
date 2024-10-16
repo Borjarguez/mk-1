@@ -47,6 +47,10 @@
   align-items: center;
   gap: 1rem;
 }
+.image {
+  width: 500px;
+  height: 300px;
+}
 
 .itemArrow {
   fill: var(--quinary-color) !important;
