@@ -31,7 +31,7 @@ function ContentDisplay({ module_items }) {
     <div className={styles.content}>
       <p className={styles.labelText}>{module_items.field_group.labelText}</p>
       <h2 className={styles.contentTitle}>{module_items.field_group.contentTitle}</h2>
-      <p>{module_items.field_group.paragraphText}</p>
+      <p className={styles.paragraphText}>{module_items.field_group.paragraphText}</p>
       <img src={module_items.field_group.image.src} alt={''} className={styles.image} />
       <div className={styles.navigation}>
         <button className="left" disabled={module_items.isFirst} onClick={module_items.onPrevious}>
