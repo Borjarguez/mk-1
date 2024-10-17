@@ -47,13 +47,18 @@
   align-items: center;
   gap: 1rem;
 }
+
+.menuItem.selected .item .itemArrow {
+  fill: var(--quinary-color);
+}
+
+.menuItem .item .itemArrow {
+  fill: var(--senary-color);
+}
+
 .image {
   width: 500px;
   height: 300px;
-}
-
-.itemArrow {
-  fill: var(--quinary-color) !important;
 }
 
 .content {
@@ -97,12 +102,11 @@
 .arrowButton {
   padding: 10px 15px;
   background-color: var(--quaternary-color);
-  color: white;
 }
 
 button {
   cursor: pointer;
-  border: 1px solid var(--quaternary-color);
+  border: 1px solid white;
   background-color: white;
   cursor: pointer;
 

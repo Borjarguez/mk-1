@@ -6,6 +6,7 @@
   --tertiary-color: #E0F7F4;
   --quaternary-color: #3D83DF;
   --quinary-color: #00C3A5;
+  --senary-color: #DCDFE3;
 }
 
 :global(html) {
