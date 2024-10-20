@@ -31,7 +31,7 @@ export const fields = (
             field_group: {
               labelText: '01 - FIRST STEPS', 
               contentTitle: 'Creating and managing appointments',
-              paragraphText: 'Learn how to create, cancel and modify appointments, and how to set automatic notifications for patients to receive appointment confirmations and reminders.',
+              paragraphText: 'Learn how to create, cancel and modify appointments, and how to set automatic notifications for patients to receive appointment confirmation and visit reminder notifications.',
               image: { src: image1, alt: '' },
             },
           },
@@ -40,7 +40,7 @@ export const fields = (
             field_group: {
               labelText: '02 - SETTINGS', 
               contentTitle: 'Adding blocks',
-              paragraphText: 'Will a specialist be absent for a few hours? Learn how to block their schedule and prevent patients from scheduling appointments during that time.',
+              paragraphText: 'Will a specialist be absent for a few hours on a certain day, or maybe is going on holiday? We show you how to add blocks to the calendar so that patients cannot book appointments for those dates.',
               image: { src: image2, alt: '' },
             },
           },
