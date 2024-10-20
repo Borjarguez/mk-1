@@ -16,14 +16,48 @@
   width: 40%;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  height: 100%;
+  background-color: white;
+  width: 60%;
+  transition: ease-in-out 0.3s;
+}
+
+.image {
+  width: 600px;
+}
+
+.labelText {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  background-color: var(--tertiary-color);
+  width: fit-content;
+  padding: 0 5px;
+  margin: 0;
+}
+
+.contentTitle {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
 .paragraphText {
   color: var(--secondary-color);
 }
 
 .menuItem {
   font-family: 'Roboto', sans-serif;
+  color: var(--primary-color);
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,46 +84,12 @@
   gap: 1rem;
 }
 
-.menuItem.selected .item .itemArrow {
-  fill: var(--quinary-color);
-}
-
 .menuItem .item .itemArrow {
   fill: var(--senary-color);
 }
 
-.image {
-  width: 600px;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  height: 100%;
-  background-color: white;
-  width: 60%;
-
-  transition: ease-in-out 0.3s;
-}
-
-.labelText {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 900;
-  background-color: var(--tertiary-color);
-  width: fit-content;
-  padding: 0 5px;
-  margin: 0;
-}
-
-.contentTitle {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 26px;
-  font-weight: 400;
-  color: var(--primary-color);
-  margin: 0;
-  padding: 0.5rem 0;
+.menuItem.selected .item .itemArrow {
+  fill: var(--quinary-color);
 }
 
 .navigation {
@@ -111,18 +111,17 @@ button {
   cursor: pointer;
   border: 1px solid white;
   background-color: white;
-  cursor: pointer;
   padding: 10px 15px;
   border-radius: 8px;
   background-color: var(--quaternary-color);
-}
-
-.icon_left {
-  transform: scaleX(-1);
 }
 
 button:disabled {
   cursor: not-allowed;
   opacity: 0.5;
   background-color: grey;
+}
+
+.icon_left {
+  transform: scaleX(-1);
 }
