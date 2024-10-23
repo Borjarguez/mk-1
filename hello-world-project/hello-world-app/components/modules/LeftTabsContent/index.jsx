@@ -3,12 +3,12 @@ import LeftTabsContentGallery from '../../islands/LeftTabsContentGallery.jsx?isl
 import Layout from '../../Layout.jsx';
 
 export const Component = ({ fieldValues }) => {
-  const { module_items } = fieldValues;
+  const { module_items, general_title: title, general_subtitle: subtitle } = fieldValues;
 
   return (
     <Layout>
-      <h2 className='title'>{'This is an optional heading block!'}</h2>
-      <p className='subtitle'>Check this series of video tutorials to help you configure the most basic aspects of the tool.</p>
+      <h2 className='title'>{ title }</h2>
+      <p className='subtitle'>{ subtitle }</p>
 
       <Island
         module={LeftTabsContentGallery}
