@@ -14,7 +14,6 @@ import image2 from '../../assets/image_2.png';
  * Here we are defining module fields that will show up for marketers in the page editor so they can customize the module
  * We also define default field values
  */
-{/* TODO: Mejorar esto antes de enseñarselo a nadie: labels y demas */}
 export const fields = (
   <ModuleFields>
     <RepeatedFieldGroup
