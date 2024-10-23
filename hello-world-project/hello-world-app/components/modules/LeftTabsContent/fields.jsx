@@ -16,6 +16,16 @@ import image2 from '../../assets/image_2.png';
  */
 export const fields = (
   <ModuleFields>
+    <TextField
+        label="Module title"
+        name="general_title"
+        default="This is an optional heading block!"
+    />
+    <TextField
+        label="Module subtitle"
+        name="general_subtitle"
+        default="Check this series of video tutorials to help you configure the most basic aspects of the tool."
+    />
     <RepeatedFieldGroup
         name="module_items"
         label="Default Todos"
